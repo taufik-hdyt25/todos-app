@@ -127,6 +127,7 @@ const HomeScreen: React.FC<StackProps<"HomeScreen">> = ({
           containerStyle={styles.containerStyle}
           placeholder="Tambahkan Todo Baru"
           onChangeText={(e) => setTextInput(e)}
+          value={textInput}
         />
 
         <Icon onPress={addTodo} name="add-circle" size={35} type="Ionicons" />
